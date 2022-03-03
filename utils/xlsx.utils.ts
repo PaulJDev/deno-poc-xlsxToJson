@@ -7,10 +7,7 @@ export const getWorkBook = async (path: string): Promise<WorkBook> => {
   return await xlsx.read(rawText, { type: "buffer" });
 };
 
-export const getWorksheet = (
-  workbook: WorkBook,
-  sheetName: string,
-): WorkSheet => workbook.Sheets[sheetName];
+export const getWorksheet = (workbook: WorkBook, sheetName: string): WorkSheet => workbook.Sheets[sheetName];
 
 export const worksheetsToJson = (workbook: WorkBook, worksheets: string[]): Record<string, WorkSheet[]> => {
   return worksheets.reduce((a, c) => {
