@@ -1,0 +1,2 @@
+scripts:
+  start: deno run --allow-read --import-map ./imports.json main.ts
