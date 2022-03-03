@@ -2,6 +2,7 @@
   "imports": {
     "xlsxlib": "https://jspm.dev/xlsx@0.17.5",
     "types": "./types/mod.ts",
-    "utils": "./utils/mod.ts"
+    "utils": "./utils/mod.ts",
+    "env": "https://deno.land/x/dotenv@v3.2.0/mod.ts"
   }
 }
