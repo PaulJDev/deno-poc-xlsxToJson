@@ -5,7 +5,7 @@ import { config } from "env";
 
 const xlsx = xlsxlib as XLSX;
 
-const workbook = await getWorkBook(config().XLSX_PATH);
+const workbook = getWorkBook(config().XLSX_PATH);
 
 //Worksheet to JSON
 const sheet = getWorksheet(workbook, workbook.SheetNames[0]); //workbook.Sheets[workbook.SheetNames[0]];
