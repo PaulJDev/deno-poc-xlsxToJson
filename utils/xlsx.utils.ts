@@ -12,7 +12,7 @@ export const getWorksheet = (
   sheetName: string,
 ): WorkSheet => workbook.Sheets[sheetName];
 
-export const worksheetsToJson = (workbook: WorkBook, worksheets: string[]) => {
+export const worksheetsToJson = (workbook: WorkBook, worksheets: string[]): Record<string, WorkSheet[]> => {
   return worksheets.reduce((a, c) => {
     const sheet = getWorksheet(workbook, c);
     return {
