@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "xlsxlib": "https://jspm.dev/xlsx@0.17.5",
+    "types": "./types/mod.ts",
+    "utils": "./utils/mod.ts"
+  }
+}

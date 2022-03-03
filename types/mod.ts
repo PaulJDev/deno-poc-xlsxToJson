@@ -1,1 +1,1 @@
-export * from './xlsx.type.ts'
+export * from "./xlsx.type.ts";
